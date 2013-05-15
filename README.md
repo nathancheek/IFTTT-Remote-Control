@@ -32,3 +32,8 @@ This project works thanks to [IFTTT](https://ifttt.com) and [Dropbox](https://ww
 1. These commands require root, I used the crontab at /etc/crontab
 2. This is the line that I entered in crontab to run the script every minute, where "```/etc/ifttt/iftttcontrol.sh```" is the location of the script, it may be different for you:  
 ```*/1 * * * * root sh /etc/ifttt/iftttcontrol.sh```
+
+###Pushover Notifications###
+
+If you would like to receive [Pushover](https://pushover.net) notifications, use the iftttcontrolnotify.sh file instead of the iftttcontrol.sh file.
+Be sure to set the POTOKEN and POUSER variables.
