@@ -6,23 +6,23 @@ LOGLOCATION="/home/username/IFTTT.log"
 SLEEP="sleep"
 REBOOT="reboot"
 SHUTDOWN="shutdown"
-Date=$(date +"%D %T")
+Date=$(date +"%Y-%m-%d %T")
 
 if [ -e $IFTTTLOCATION/$SLEEP.txt ]; then
 rm $IFTTTLOCATION/$SLEEP.txt
-echo "Going to sleep at $Date" >> $LOGLOCATION
+echo "$Date - Going to sleep" >> $LOGLOCATION
 pm-suspend
 exit 0
 fi
 if [ -e $IFTTTLOCATION/$REBOOT.txt ]; then
 rm $IFTTTLOCATION/$REBOOT.txt
-echo "Rebooting at $Date" >> $LOGLOCATION
+echo "$Date - Rebooting" >> $LOGLOCATION
 reboot
 exit 0
 fi
 if [ -e $IFTTTLOCATION/$SHUTDOWN.txt ]; then
 rm $IFTTTLOCATION/$SHUTDOWN.txt
-echo "Shutting down at $Date" >> $LOGLOCATION
+echo "$Date - Shutting down" >> $LOGLOCATION
 shutdown now
 exit 0
 fi
