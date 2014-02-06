@@ -29,7 +29,7 @@ This project works thanks to [IFTTT](https://ifttt.com) and [Dropbox](https://ww
 
 ####Cron####
 
-1. These commands require root, I used the crontab at /etc/crontab
+1. Since commands such as ```shutdown``` require root, I used the crontab at /etc/crontab to do so
 2. This is the line that I entered in crontab to run the script every minute, where "```/etc/ifttt/iftttcontrol.sh```" is the location of the script, it may be different for you:  
 ```*/1 * * * * root sh /etc/ifttt/iftttcontrol.sh```
 
