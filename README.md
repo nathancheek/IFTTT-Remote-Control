@@ -24,7 +24,7 @@ This project works thanks to [IFTTT](https://ifttt.com) and [Dropbox](https://ww
 
 1. Download the script ```iftttcontrol.sh``` from this repository
 2. Edit the variables at the beginning of the file for the IFTTT folder location and where you want a log to be stored
-3. Edit the command variables if you are using different IFTTT text tags
+3. Edit the command variables if you are using your own IFTTT text tags
 4. You may want to move the script to a safe location and change the owner to root so it can't be edited too easily
 
 ####Cron####
